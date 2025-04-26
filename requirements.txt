@@ -1,0 +1,9 @@
+streamlit
+fitz
+groq
+pillow
+pandas
+llama-index
+llama-index-llms-groq
+python-dotenv
+ipykernel
