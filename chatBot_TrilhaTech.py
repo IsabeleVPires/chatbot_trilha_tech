@@ -1,21 +1,10 @@
-# Importar bibliotecas
 import streamlit as st
-#import fitz
 from groq import Groq
 from PIL import Image
 
 # Configurar chave da Groq
 GROQ_API_KEY = "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"
 client = Groq(api_key=GROQ_API_KEY)
-
-# Função para extrair texto de PDFs (se quiser usar também com PDFs futuramente)
-def extract_files(uploader):
-    text = ""
-    for pdf in uploader:
-        with fitz.open(stream=pdf.read(), filetype="pdf") as doc:
-            for page in doc:
-                text += page.get_text("text")
-    return text
 
 # Função para carregar a base de conhecimento
 def carregar_base_conhecimento(caminho):
