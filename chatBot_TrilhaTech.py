@@ -1,6 +1,6 @@
 # Importar bibliotecas
 import streamlit as st
-import fitz
+#import fitz
 from groq import Groq
 from PIL import Image
 
