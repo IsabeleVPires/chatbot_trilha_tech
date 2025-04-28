@@ -47,7 +47,7 @@ def main():
             st.warning("Digite uma pergunta antes de enviar.")
         else:
             resposta = chat_with_groq(user_input, base_conhecimento)
-            st.markdown("### Resposta da IA:")
+            st.markdown("### Resposta:")
             st.success(resposta)
 
     st.divider()
